@@ -1,0 +1,24 @@
+Unit 2 : Ajax and State
+
+ AJAX stands for Asynchronous JavaScript and XML.
+
+Ajax Controls : 
+1.Script Manager
+2.UpdatePanel
+3.Update Progress
+4.Timer Control
+
+State management maintains and stores the information of 
+any user till the end of the user session.
+
+1 client side state management
+ View state
+ Hidden field
+ Cookie
+ Query string
+
+2 Server side state management
+ Session state
+ Application state
+
+

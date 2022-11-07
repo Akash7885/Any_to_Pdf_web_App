@@ -1,0 +1,32 @@
+{% extends 'index.html' %} 
+{% load static %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+</br>
+{% if url %}
+    <h1 style="text-align: center">Your Pdf file is ready for download.</h1>
+    </br>
+    </br>
+    <a style="margin:0 auto;display: block; width: 100px" type="button" class="btn btn-warning" href="{% static '/uploaded_files/jpg2pdf/' %}{{ url }}/sample.pdf" download="sample.pdf">Download</a>
+{% endif %}
+   
+</div>
+<br>
+<br>
+
+<div class="col">
+  <center><h2 style="text-align: center;">Thankyou for visiting Website</h2>
+    <i style="font-size: 35px ;" class="bi bi-hand-thumbs-up"></i></center>  
+</div>
+
+<br ><br><br><br><br><br><br><br><br>
+{% endblock content %}
+
+{% block footer %}
+
+{% endblock footer %}

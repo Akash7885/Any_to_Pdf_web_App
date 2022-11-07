@@ -1,0 +1,24 @@
+login.aspx
+
+protected  void  BUttton1_click(Object sender,eventargs e)
+{
+if (textBox1.text=="Akash" &&textBox2.text=="Dabhi")
+{
+//session create
+  string [] arr = {TextBox1.text,TextBox2.Text};
+  session ["myproject"] =arr;
+  Response.redirect("dashbord.aspx");
+}
+else{ lbl1.text ="invalid user name & pass"; }
+}
+
+-------------------------------------------------------
+Dashbord.aspx
+
+protected  void  page_load(Object sender,eventargs e)
+{
+//fatch session
+string[] a = (string[])session["myproject"];
+lbl1.text = a[0];
+lbl2.text = a[1];
+}

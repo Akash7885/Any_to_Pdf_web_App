@@ -1,0 +1,196 @@
+.dropdown-menu {
+    background-color: rgb(194, 190, 190);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-navbar {
+    box-shadow: 10px 10px 10px rgb(162, 163, 255);
+    background-color: rgb(202, 243, 248);
+}
+
+.nav-link {
+    color: #f7204e!important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(247, 32, 78);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,32,78, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon {
+    width: 18px!important;
+}
+
+.custom-toggler:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: #f76a88;
+}
+
+.navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#logo_custom {
+    margin-top: -6px;
+}
+
+@media only screen and (max-width: 760px) {
+    #logo_custom {
+        width: 40%;
+    }
+}
+
+b {
+    font-size: 20px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+b:hover {
+    color: blue;
+}
+
+.logo a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    .logo a {
+        font-size: 27px;
+    }
+}
+
+
+/* Footer  */
+
+@media screen and (max-width: 500px) {
+    .footer {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(253, 253, 252, 0.233);
+    color: black;
+}
+
+
+/* icons */
+
+.icon {
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon i {
+    font-size: 30px;
+    padding: 8px;
+}
+
+.icon a:hover {
+    text-decoration: none;
+    color: rgba(19, 161, 255, 0.781);
+}
+
+.cp {
+    padding-right: 10px;
+    font-family: Rockwell;
+    font-weight: bold;
+    text-align: right;
+}
+
+.about i {
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline lightcoral;
+    text-align: left;
+}
+
+.about p {
+    padding-left: 10px;
+    font-family: Lucida Fax;
+}
+
+
+/* contact */
+
+.contact {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+/* copyright */
+
+.copyright {
+    background-color: rgb(63, 62, 62);
+    color: white;
+    text-align: center;
+}
+
+
+/* Main  body */
+
+body {
+    background: linear-gradient(110deg, #43b0f8, #c54e8f);
+}
+
+.info h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+}
+
+.info i {
+    font-size: 35px;
+}
+
+.icon b {
+    font-size: 50px;
+}
+
+.info pre {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .info pre {
+        font-size: 15px;
+        text-align: center;
+    }
+    .info h1 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.info img {
+    height: 240px;
+    width: 360px;
+}
+
+
+/* body{
+    background: linear-gradient(120deg,#2691d9,#ad447e);
+} */

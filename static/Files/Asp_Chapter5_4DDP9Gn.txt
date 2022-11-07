@@ -1,0 +1,56 @@
+unit 5 : xml , configuration & deployment of application
+
+
+XML : Extensible Markup Language
+
+To read xml file use ReadXml() method of dataset.
+
+Web service :
+Web service is an application that is designed to interact directry with other application over 
+the internet.
+
+SOAP : Simple Object Access Protocol
+SOAP (simple object access protocol) is a remote function calls that invokes
+method and execute them on Remote machine and translate the object
+communication into XML format.
+
+WSDL : Web Service Description Language
+
+UDDI(Universal Description, Discovery, and Integration) allows you to find web
+services by connecting to a directory.
+
+Types of config file : 
+server
+IIS
+Root web
+website
+Asp.net
+application root directory
+application subdirectory
+
+
+Tracing
+- ASP.NET tracing enables you to view diagnostic information about a single 
+request for an ASP.NET page.
+1. Page level
+2. Application level
+
+Authentication
+This element is used to verify the client's identity when the client requests 
+a page from the server. 
+IN short who is he/she ? 
+
+We have four types of authentication modes: 
+“None”,
+“Windows”,
+“Forms”,
+“Passport”.
+
+
+Authororization
+The <authorization>tag controls client access to web page resources.
+IN short what can he/she do on website ?
+
+
+
+

@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block css %}
+<link href="{% static 'main.css' %}" rel="stylesheet">
+<link href="{% static 'feedback.css' %}" rel="stylesheet">
+{% endblock css %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text">Feedback</div>
+    <form action="" method="post">
+        {% csrf_token %} 
+        <div class="form-row">
+            <div class="input-data">
+                <input type="text" name="name" required>
+                <div class="underline"></div>
+                <label for="">Name</label>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-data">
+                <input type="email" name="email" required>
+                <div class="underline"></div>
+                <label for="">Email Address</label>
+            </div>
+            <br>
+            <br>
+
+            <div class="input-data textarea">
+                <textarea rows="8" cols="80" name="msg" required></textarea>
+                <br />
+                <div class="underline"></div>
+                <label for="">Your Message</label>
+            </div>
+            <br>
+
+            <div class="input-data submit-btn">
+                    <div class="inner"></div>
+                    <input type="submit" value="submit">
+                
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+{% endblock content %}
+
+
+{% block footer %}
+
+{% endblock footer %}

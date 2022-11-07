@@ -1,0 +1,78 @@
+{% extends 'index.html' %}
+{% load static%}
+
+{% block css %}
+<link href="{% static 'main.css' %}" rel="stylesheet">
+<link href="{% static 'upload.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+<form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="frame">
+    <div class="center">
+
+      <div class="title">
+        <p>Upload Your Text File</p>
+      </div>
+
+      <div class="dropzone">
+        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon">
+        <input type="file" class="upload-input" name="files" required accept=".txt">
+      </div>
+      
+      <input type="submit" class="btn" value="Upload">
+    </div>
+  </div>
+</form>
+
+<div id="logo">
+  <img src="{% static 'icon.png' %}">
+</div>
+
+<div class="row">
+  <div class="info">
+    <b>How to convert into PDF</b>
+
+    <div class="convert">
+      <i class="bi bi-1-circle"></i>
+      Click the Select a file button above or
+      drag and drop a file into the drop zone.
+    </div>
+
+    <div class="convert">
+      <i class="bi bi-2-circle"></i>
+      Select the document you want to convert
+      into PDF.
+    </div>
+
+    <div class="convert">
+      <i class="bi bi-3-circle"></i>
+      The tool will instantly upload and transform
+      the file into a PDF.
+    </div>
+
+    <div class="convert">
+      <i class="bi bi-4-circle"></i>
+      Download the PDF to your device, or export to
+      Dropbox or Google Drive
+    </div>
+    <br>
+
+    {% if user.is_authenticated %}
+
+    {% else %}
+    <br>
+    <div class="convert">
+      <i style="font-size: 35px ;" class="bi bi-exclamation-triangle-fill"></i>
+      <p style="font-size: 30px ;">login / Register for more PDF tools</p>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% endblock content %}

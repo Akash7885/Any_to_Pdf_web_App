@@ -1,0 +1,101 @@
+Unit : 1 - Framework & web contents validation controls
+
+ 1. Asp .net application life cycle
+
+Page Request
+Start
+Initialization
+Load
+Postback Event Handling
+Rendering
+Unload
+
+
+2. IIS : Internet Information Server
+
+3. Types of file : .File types that are managed by ASP.NET are mapped to the 
+Aspnet_isapi.dll in IIS.
+
+.aszx
+.asmx
+.config
+.cs .vb
+.master
+.css
+.mdf
+.sitemap
+.skin
+.soap
+
+4. SOAP : Simple Object Access Protocol
+
+5. Controls & properties (imp only)
+
+* Button
+Text
+Visible
+
+* Textbox
+Text
+Tooltip
+Visible
+MaxLength
+Readonly
+
+* Checkbox
+Text
+Tooltip
+Visible
+Checked
+
+* Label
+Font
+ForeColor
+Text
+
+* Panel
+BackImageUrl
+DefaultButton
+Direction
+Grouping text
+Scrollbar
+
+* Ad rotator
+in advertisement xml file
+
+ -Alternate text field 
+ -Image url field 
+ -Keyword filter 
+ -Navigate url field
+
+
+*ImageMap
+There are three kinds of hot spot regions defined in ImageMap 
+control. 
+o RectangleHotSpot 
+o CircleHotSpot 
+o PolygonHotSpot
+
+
+6 Validators
+* client Side
+* Server Side
+
+* Client Side
+
+- Requiered
+- min & mac
+- type
+- pattern
+
+
+* Server Side (3R , 2C , 1S)
+
+Required Field
+Range 
+Regular Expression
+Compare
+Custom
+Summary
+
+
