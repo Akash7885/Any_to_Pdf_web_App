@@ -1,0 +1,10 @@
+#this is requirement file for this project
+=> Python
+
+#required python modules
+- Django
+- fpdf
+- img2pdf
+
+
+
